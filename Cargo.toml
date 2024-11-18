@@ -1,0 +1,40 @@
+[package]
+
+name = "collision"
+version = "0.20.1"
+authors = ["Brendan Zabarauskas <bjzaba@yahoo.com.au>",
+        "Brian Heylin",
+        "Colin Sherratt",
+        "Dzmitry Malyshau",
+        "Erick Tryzelaar",
+        "Ilya Bogdanov",
+        "Luqman Aden",
+        "Maik Klein",
+        "Mikko Perttunen",
+        "Simon Rönnberg",
+        "Pierre Krieger",
+        "Tomasz Stachowiak",
+        "Zeke Foppa",
+        "Thomas O'Dell"
+]
+license = "Apache-2.0"
+description = "A collision extension to cgmath"
+edition = "2018"
+
+documentation = "https://docs.rs/collision"
+homepage = "https://github.com/rustgd/collision-rs"
+repository = "https://github.com/rustgd/collision-rs"
+readme = "README.md"
+
+keywords = ["gamedev", "cgmath", "collision"]
+
+[lib]
+name = "collision"
+
+[features]
+serde = ["serde_crate", "cgmath/serde", "num/serde"]
+
+[dependencies]
+
+[dev-dependencies]
+genmesh = "0.5"
